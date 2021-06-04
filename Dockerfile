@@ -2,6 +2,6 @@ FROM python:3.6
 MAINTAINER Shekhar Gulati "shekhargulati84@gmail.com"
 COPY . /app
 WORKDIR /app
-RUN pip install -r requirements.txt --proxy https://proxy:8080 --trusted-host pypi.python.org
+RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
 CMD ["app.py"]
